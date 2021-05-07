@@ -1,0 +1,39 @@
+/*
+    Name: Tradio
+    Author: Quixlab
+    Portfolio : https://themeforest.net/user/quixlab/portfolio
+    Email: quixlab.com@gmail.com
+    Skype: sporsho9 
+
+
+    Table of Content: 
+
+    1. Abstract
+    2. Bootstrap CSS
+    3. Base
+    4. Layout
+    5. Component
+    6. Dashboard
+    7. Pages
+    
+    
+*/
+
+@import "./abstract/abstract";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./base/base";
+@import "./components/components";
+@import "./dashboard/dashboard";
+@import "./dashboard/balance";
+@import "./dashboard/tradingtab";
+@import "./dashboard/orderbook";
+@import "./dashboard/tradinghistory";
+@import "./layout/portfoliosidebar";
+@import "./layout/overview";
+@import "./layout/balances";
+@import "./layout/portfolio";
+@import "./layout/history";
+@import "./landing/landing";
+@import "./pages/pages";
+@import "./layout/layout";
+@import "./demo/demo";

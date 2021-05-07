@@ -1,0 +1,13 @@
+.history {
+    .nav-link {
+        font-size: 1.4rem;
+        font-weight: $headings-font-weight;
+        color: $text-muted;
+    }
+    .nav-link.active {
+        background-color: transparent;
+    }
+    .card-body {
+        padding: 0;
+    }
+}

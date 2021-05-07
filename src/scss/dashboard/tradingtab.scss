@@ -1,0 +1,93 @@
+.tradingtab {
+    .card-body {
+        height: calc(100vh - 463px);
+    }
+    .btn-group-toggle {
+        .btn {
+            padding-top: .35rem;
+            padding-bottom: .35rem;
+            font-size: 0.8rem;
+        }
+        .btn-dark {
+            background-color: rgba(white, .2);
+            border-color: rgba(white, .1);
+        }
+    }
+    .accordion {
+        .mark_advanced {
+            .btn-outline-dark {
+                width: calc((100% - 20px)/3);
+                border-color: rgba(white, .1);
+                color: white;
+            }
+            .form-control {
+                width: calc((100% - 20px)/3);
+                border-color: rgba(white, .1);
+                color: white;
+                background-color: transparent;
+                font-size: .7rem;
+                padding-left: .4rem;
+                padding-right: .4rem;
+                text-align: center;
+                &:hover {
+                    background-color: #403f4c;
+                }
+            }
+            .selected {
+                background-color: #403f4c;
+            }
+        }
+        .limit_advanced {
+            .dropdown-toggle {
+                background-color: #000;
+            }
+            .btn-outline-dark {
+                background-color: #000;
+                color: white;
+            }
+            .form-control {
+                border-color: rgba(white, .1);
+                // font-size: .8rem;
+                text-align: right;
+            }
+            .dropdown-menu {
+                padding: 0rem 0rem;
+                width: 100%;
+                .dropdown-item {
+                    padding-left: 1rem;
+                    &:hover {
+                        background-color: $secondary;
+                    }
+                    
+                }
+                .dropdown-item.active {
+                    background-color: $secondary;
+                }
+            }
+        }
+        .stop_advanced {
+            .btn-outline-dark {
+                width: calc((100% - 20px)/3);
+                border-color: rgba(white, .1);
+                color: white;
+            }
+            .form-control {
+                width: calc((100% - 20px)/3);
+                border-color: rgba(white, .1);
+                color: white;
+                background-color: transparent;
+                font-size: .7rem;
+                padding-left: .4rem;
+                padding-right: .4rem;
+                text-align: center;
+                &:hover {
+                    background-color: #403f4c;
+                }
+            }
+            .selected {
+                background-color: #403f4c;
+            }
+        }
+    }
+    
+}
