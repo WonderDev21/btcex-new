@@ -1,6 +1,5 @@
 {
-  "name": "tradio",
-  "homepage": "http://quixlab.com/",
+  "name": "btcex-new",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
