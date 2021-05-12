@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink, Link, useRouteMatch } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({ className }) => {
   let { path, url } = useRouteMatch();
   return (
-    <div className="portfoliosidebar">
+    <div className={className}>
       <div className="menu">
         <ul>
           <li>

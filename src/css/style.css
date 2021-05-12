@@ -7777,7 +7777,7 @@ strong,
 #main-wrapper {
   transition: all 0.25s ease-in;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   margin-top: 60px; }
   #main-wrapper.show {
