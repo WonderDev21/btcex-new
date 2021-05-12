@@ -5,12 +5,12 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 const Overview = () => {
   return (
     <div className="overview row justify-content-center">
-      <div class="col-xl-10 col-lg-10 col-md-12 col-xxl-10 my-5">
-        <h3>Overview</h3>
+      <div class="col-xl-10 col-lg-11 col-md-12 col-xxl-10 my-5">
+        <h3 className="ml-md-4 ml-lg-0">Overview</h3>
         <div class="card mt-3">
           <div class="card-body">
             <div className="row no-gutters">
-              <div className="col-lg-4 border-right">
+              <div className="col-lg-3 border-right">
                 <div className="p-4">
                   <h5>Portfolio Value</h5>
                   <h3 className="mt-4">$0.00</h3>
@@ -20,8 +20,8 @@ const Overview = () => {
                   </h6>
                 </div>
                 <div className="p-4 border-top">
-                  <div className="d-flex justify-content-between">
-                    <div>
+                  <div className="d-flex ">
+                    <div className="w-50">
                       <h6 className="text-muted">Margin Account</h6>
                       <h5>$0.00</h5>
                     </div>
@@ -36,7 +36,7 @@ const Overview = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-9">
                 <AreaChart />
               </div>
             </div>

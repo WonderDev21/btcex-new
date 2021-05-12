@@ -4,7 +4,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 const History = () => {
   return (
     <div className="history row justify-content-center">
-      <div class="col-xl-10 col-lg-10 col-md-12 col-xxl-10 my-5">
+      <div class="col-xl-10 col-lg-11 col-md-12 col-xxl-10 my-5">
         <Tab.Container defaultActiveKey="active-orders">
           <Nav variant="pills">
             <Nav.Link eventKey="active-orders">Trading</Nav.Link>

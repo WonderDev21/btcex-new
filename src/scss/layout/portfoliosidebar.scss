@@ -3,10 +3,13 @@
     position: fixed;
     left: 0;
     height: 100%;
-    width: 300px;
+    width: 230px;
     top: 0;
     box-shadow: 0 10px 30px 0 rgba(82, 63, 105, 0.08);
     border-right: 1px solid $border-color;
+    // @include respond("tab-port") {
+    //    display: none;
+    // }
     .menu {
         margin-top: 100px;
         ul {
@@ -41,6 +44,70 @@
                         font-size: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.portfoliomobilesidebar{
+    background: $dark;
+    height: 100%;
+    width: 230px;
+    box-shadow: 0 10px 30px 0 rgba(82, 63, 105, 0.08);
+    // border-right: 1px solid $border-color;
+    .menu {
+        padding-top: 100px;
+        height: 100%;
+        ul {
+            li {
+                text-align: left;
+                margin-bottom: 15px;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                a {
+                    padding: 8px 10px;
+                    display: block;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    color: $text-muted;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background: $hover-color;
+                        color: $white;
+                        i {
+                            color: $white;
+                        }
+                    }
+                    &.active {
+                        background: lighten($body-bg, 0%);
+                        i {
+                            color: $white;
+                        }
+                    }
+                    i {
+                        color: $headings-color;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &_hr {
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            letter-spacing: .6px;
+            text-transform: uppercase;
+            padding: 12px 24px 8px;
+            color: #6b6a80;
+            &::after {
+                content: "";
+                display: block;
+                background-color: #2d2d3d;
+                width: 100%;
+                height: 1px;
+                margin-left: 6px;
             }
         }
     }

@@ -1,3 +1,6 @@
 .portfolio {
-    margin-left: 320px;
+    margin-left: 230px;
+    @include respond("tab-port") {
+        margin-left: 0px;
+     }
 }

@@ -187,3 +187,16 @@
         top     : 3px;
     }
 }
+
+.header4 {
+    padding      : 18px 0px;
+    background   : $dark;
+    border-bottom: 0px solid $border-color;
+    transition   : all 0.3s ease-in-out;
+    z-index      : 999;
+    position     : fixed;
+    left         : 0;
+    right        : 0;
+    top          : 0;
+    text-align: center;
+}

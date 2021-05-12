@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Homepage from './pages/index';
 import Dashboard from './pages/dashboard';
 import Exchange from './pages/exchange';
@@ -44,7 +44,7 @@ class Index extends Component {
                     <div id="main-wrapper">
                         <Switch>
                             <Route path='/home' component={Homepage} />
-                            <Route path='/' exact component={Dashboard} />
+                            <Route path='/dashboard' exact component={Dashboard} />
                             <Route path='/portfolio' component={Portfolio} />
                             <Route path='/exchange'  component={Exchange} />
                             <Route path='/account-overview' component={AccountOverview} />
@@ -77,6 +77,7 @@ class Index extends Component {
                             <Route path='/verify-step-4' component={VerifyStep4} />
                             <Route path='/verify-step-5' component={VerifyStep5} />
                             <Route path='/verify-step-6' component={VerifyStep6} />
+                            <Redirect to="/dashboard" from="/" />
                         </Switch>
                     </div>
                 </BrowserRouter>
