@@ -3,11 +3,11 @@ import React from 'react';
 import MarketExchangeChart from '../../components/MarketExchangeChart/MarketExchangeChart';
 import MarketLineChart from '../../components/MarketLineChart/MarketLineChart';
 
-const Exchange = () => {
+const Exchange = ({ title }) => {
   return (
     <div className="exchange row justify-content-center">
       <div class="col-xl-10 col-lg-11 col-md-12 col-xxl-10 my-5">
-        <h3 className="mb-4 ml-md-4 ml-lg-0">ETH-DAI</h3>
+        <h3 className="mb-4 ml-md-4 ml-lg-0">{title}</h3>
         <div className="row ">
           <div className="col pl-0 pr-0">
             <MarketExchangeChart />

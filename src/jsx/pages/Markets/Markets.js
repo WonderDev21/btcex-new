@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import ReactSidebar from 'react-sidebar';
 import Header2 from '../../layout/header2';
 import Header4 from '../../layout/header4';
 import Sidebar from './Sidebar';
@@ -10,7 +11,7 @@ import Overview from './Overview';
 import TradingPairs from './TrandingPairs';
 import Assets from './Assets';
 import Exchange from './Exchange';
-import ReactSidebar from 'react-sidebar';
+import CoinMarket from './CoinMarket';
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -82,17 +83,42 @@ const Markets = () => {
             component={TradingPairs}
           />
           <Route path="/markets/assets" exact component={Assets} />
-          <Route path="/markets/eth-dai" exact component={Exchange} />
+          <Route
+            path="/markets/eth-dai"
+            exact
+            component={() => <Exchange title="ETH-DAI" />}
+          />
           <Route
             path="/markets/eth-usdc"
             exact
             component={Exchange}
+            component={() => <Exchange title="ETH-USDC" />}
           />
           <Route
             path="/markets/dai-usdc"
             exact
-            component={Exchange}
+            component={() => <Exchange title="DAI-USDC" />}
           />
+          <Route
+            path="/markets/eth"
+            exact
+            component={() => (
+              <CoinMarket title="Ethereum" name="ETH" />
+            )}
+          />
+          <Route
+            path="/markets/usdc"
+            exact
+            component={() => (
+              <CoinMarket title="USDC Coin" name="USDC" />
+            )}
+          />
+          <Route
+            path="/markets/dai"
+            exact
+            component={() => <CoinMarket title="DAI" name="DAI" />}
+          />
+
           {/* <Route
             path="/portfolio/balances"
             exact
