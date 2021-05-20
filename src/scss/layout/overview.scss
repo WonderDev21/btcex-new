@@ -3,3 +3,9 @@
         padding: 0;
     }
 }
+
+.overview_markets {
+    &_chartbox {
+        background-color: $dark;
+    }
+}

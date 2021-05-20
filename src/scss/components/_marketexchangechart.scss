@@ -1,0 +1,21 @@
+.marketexchangechart {
+    width: 830px;
+    height: 326px;
+    background-color: $dark;
+    h6 {
+        margin-bottom: 0px;
+    }
+    position: relative;
+    &_title {
+        position: absolute;
+    }
+    &_chart {
+        position: absolute;
+        top: 50px;
+    }
+    &_subtitle {
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 25px;
+    }
+}

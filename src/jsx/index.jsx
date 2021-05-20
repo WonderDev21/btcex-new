@@ -34,6 +34,7 @@ import VerifyStep4 from './pages/verify-step-4';
 import VerifyStep5 from './pages/verify-step-5';
 import VerifyStep6 from './pages/verify-step-6';
 import Portfolio from './pages/Portfolio'
+import Markets from './pages/Markets'
 
 class Index extends Component {
     render() {
@@ -46,6 +47,7 @@ class Index extends Component {
                             <Route path='/home' component={Homepage} />
                             <Route path='/dashboard' exact component={Dashboard} />
                             <Route path='/portfolio' component={Portfolio} />
+                            <Route path='/markets' component={Markets} />
                             <Route path='/exchange'  component={Exchange} />
                             <Route path='/account-overview' component={AccountOverview} />
                             <Route path='/data-tbi' component={Tbi} />

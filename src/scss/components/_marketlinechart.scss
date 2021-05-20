@@ -1,0 +1,19 @@
+.marketlinechart {
+    width: 420px;
+    height: 180px;
+    h6 {
+        margin-bottom: 0px;
+    }
+    position: relative;
+    &_title {
+        position: absolute;
+    }
+    &_chart {
+        position: absolute;
+        top: 50px;
+    }
+    &_subtitle {
+        position: absolute;
+        bottom: 15px;
+    }
+}

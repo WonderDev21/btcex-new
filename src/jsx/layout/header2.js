@@ -110,15 +110,31 @@ const Header2 = () => {
                   >
                     Portfolio
                   </Button>
+                  <Button
+                    variant="dark"
+                    className="mx-2"
+                    onClick={() => gotopage('/markets')}
+                    active={location.pathname === '/markets'}
+                  >
+                    Markets
+                  </Button>
+                  <Button
+                    variant="dark"
+                    className="mx-2"
+                    onClick={() => gotopage('/borrow')}
+                    active={location.pathname === '/borrow'}
+                  >
+                    Borrow
+                  </Button>
                   <Dropdown className="profile_log">
                     <Dropdown.Toggle as={MoreToggle} />
                     <Dropdown.Menu size="sm" title="">
-                      <Link to={'/'} class="dropdown-item my-1">
+                      {/* <Link to={'/'} class="dropdown-item my-1">
                         <i class="fa fa-signal"></i> Markets
                       </Link>
                       <Link to={'/'} class="dropdown-item my-1">
                         <i class="fa fa-handshake-o"></i> Borrow
-                      </Link>
+                      </Link> */}
                       <Link to={'/'} class="dropdown-item my-1">
                         <i class="fa fa-book"></i> Documentation
                       </Link>
